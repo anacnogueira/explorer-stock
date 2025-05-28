@@ -4,7 +4,7 @@ function verifyUserAuthorization(roleToVerify) {
   return (request, response, next) => {
     const { role } = request.user;
 
-    if (role !== roleToVerify) {
+    if (!roleToVerify.includes(role)) {
       throw new AppError("Usuário não autorizado", 401);
     }
 
