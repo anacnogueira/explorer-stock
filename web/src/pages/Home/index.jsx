@@ -17,7 +17,7 @@ export function Home() {
 
         {[USER_ROLES.ADMIN, USER_ROLES.SALE].includes(user.role) && (
           <>
-            {user.role === USER_ROLES.ADMIN && (
+            {user.role === "admin" && (
               <Feature title="Fornecedores" icon={FiTruck} to="/suppliers" />
             )}
             <Feature
