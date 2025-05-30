@@ -8,6 +8,7 @@ import { USER_ROLES } from "../../utils/roles";
 
 export function Home() {
   const { user } = useAuth();
+
   return (
     <Container>
       <Header />

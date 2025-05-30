@@ -1,0 +1,263 @@
+{
+  "info": {
+    "name": "explorer-stock-api",
+    "_postman_id": "ef69d316-2707-40b3-8943-c9c5d5e5aad1",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Sales",
+      "description": "",
+      "item": [
+        {
+          "id": "0a96c958-70f2-4ca5-a0d7-304790d2a461",
+          "name": "New Request",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "localhost",
+              "path": [
+                "sales"
+              ],
+              "port": "3333"
+            },
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "<<token>>",
+                "scope": ""
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "body": "any",
+              "code": 200,
+              "name": "Response_200",
+              "id": "61912d43-4a52-4d03-9218-d66faf0a67d2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "description": "",
+      "item": [
+        {
+          "id": "2447111d-b77a-4c72-8c71-1a78c3dd4aca",
+          "name": "Create",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "localhost",
+              "path": [
+                "products"
+              ],
+              "port": "3333"
+            },
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "<<token>>",
+                "scope": ""
+              }
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "",
+                "disabled": false
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Produto XPTO\",\r\n  \"price\": 34.99\r\n}",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "body": "any",
+              "code": 200,
+              "name": "Response_200",
+              "id": "da906618-8225-4f45-addd-1ce9a262d729"
+            }
+          ]
+        },
+        {
+          "id": "47d2299c-e149-40f0-9926-8d81c6283dfa",
+          "name": "Get",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "localhost",
+              "path": [
+                "products"
+              ],
+              "port": "3333"
+            },
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "<<token>>",
+                "scope": ""
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "body": "any",
+              "code": 200,
+              "name": "Response_200",
+              "id": "b03d3edd-313f-4ff8-a4ca-9ecc9a151340"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sessions",
+      "description": "",
+      "item": [
+        {
+          "id": "add21a68-7afe-47fc-b045-ca51857e6ef4",
+          "name": "Create",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "localhost",
+              "path": [
+                "sessions"
+              ],
+              "port": "3333"
+            },
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "",
+                "disabled": false
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"rodrigo@email.com\",\r\n  \"password\": \"123\"\r\n}",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "body": "any",
+              "code": 200,
+              "name": "Response_200",
+              "id": "aeaf197b-8ea9-4871-9c2e-9012fe272873"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "description": "",
+      "item": [
+        {
+          "id": "fe701720-5f74-454e-a14b-a8c4512f0f91",
+          "name": "Create",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "host": "localhost",
+              "path": [
+                "users"
+              ],
+              "port": "3333"
+            },
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "",
+                "disabled": false
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"João Santos\",\r\n  \"email\": \"joao@email.com\",\r\n  \"password\": \"123\"\r\n}",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "body": "any",
+              "code": 200,
+              "name": "Response_200",
+              "id": "c597c404-2718-4e67-b79a-816298eb8bee"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": []
+}
